@@ -52,11 +52,12 @@ $routes->get('/about', function(){
     echo view('v_about');
     echo view('layout/footer');
 });
-$routes->get('/post', 'PostController::index');
-
 $routes->get('/admin', 'Templating::index');
 $routes->get('/admin/posts', 'AdminPostController::index');
 $routes->get('/admin/posts/create', 'AdminPostController::create');
+$routes->get('/admin/posts/edit/(:segment)', 'AdminPostsController::edit/$1');
+$routes->get('/admin/posts/delete/(:segment)', 'AdminPostsController::delete/$1');
+$routes->post('/admin/posts/update/(:segment)', 'AdminPostsController::update/$1');
 $routes->post('/admin/posts/store', 'AdminPostController::store');
 
 /*
