@@ -1,5 +1,5 @@
-# Praktikum Web Lanjut B
+# Praktikum Web Lanjut A
 # Project Blog Apps
-### Nama   : Falahyan
-### NPM    : 1917051049
-### Kelas  : B
+### Nama   : adrian septa yoka
+### NPM    : 1917051043
+### Kelas  : A
